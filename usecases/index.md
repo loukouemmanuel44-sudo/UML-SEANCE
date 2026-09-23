@@ -23,7 +23,9 @@ généralisation du client ? Justifiez en deux lignes.
 Reponse: L'agent de voyage est un acteur distinct du client.
  Il réserve une chambre pour le compte du client et possède donc un rôle différent dans le système.
 
+
 2.Le diagramme de cas d'utilisation
+
 
 
 @startuml
@@ -77,7 +79,10 @@ UC2 --> UC12 : <<extend>>
 UC3 --> UC4 : <<extend>>
 @enduml
 
+
 3.  Deux fiches textuelles
+
+
 
 Fiche 1 — Réserver une chambre
 
