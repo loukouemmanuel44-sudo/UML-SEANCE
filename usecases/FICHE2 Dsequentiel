@@ -1,0 +1,14 @@
+@startuml
+actor "Agent de voyage" as Agent
+participant "Système" as System
+participant "Service de paiement" as Pay
+
+Agent -> System : Consulter disponibilités pour un client
+System --> Agent : Liste des chambres
+
+Agent -> System : Réserver pour le client
+System -> Pay : Paiement des arrhes
+Pay --> System : Paiement validé
+
+System --> Agent : Confirmation de réservation
+@enduml
