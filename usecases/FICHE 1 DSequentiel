@@ -1,0 +1,14 @@
+@startuml
+actor Client
+participant "Système" as System
+participant "Service de paiement" as Pay
+
+Client -> System : Consulter disponibilités
+System --> Client : Liste des chambres
+
+Client -> System : Réserver une chambre
+System -> Pay : Demande de paiement des arrhes
+Pay --> System : Paiement validé
+
+System --> Client : Confirmation de réservation
+@enduml
